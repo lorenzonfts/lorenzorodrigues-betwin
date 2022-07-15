@@ -1,0 +1,366 @@
+#wpp-fixo {
+    position: fixed;
+    z-index: 3;
+    width: 50px;
+    bottom: 20px;
+    right: 4px;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: .5s all;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#wpp-fixo.wpp {
+  width: 50px;
+  transition: .5s all;
+  overflow: hidden;
+}
+#wpp-fixo img{
+  width: 50px;
+  height: 50px;
+}
+.flutuar {
+  animation-name: flutuar;
+  animation-duration: .7s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes flutuar{
+  from{
+    transform: translate3d(0,0,0);
+    filter: brightness(100%);
+  }
+  to{
+    transform: translate3d(0,-15px,0);
+    filter: brightness(150%);
+  }
+}
+
+
+#logo{
+    width: 150px;
+}
+
+
+@media (max-width: 999px)  {  
+    .banner-atomy .bg-atomy-pc {
+        /* display: none; */
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+}
+
+
+section.atomy{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.banner-atomy {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-atomy video{
+    position: absolute;
+    /* z-index: -1; */
+    top: 0;
+    left:0;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* .banner-atomy .bg-atomy-mobile {
+    height: 120vh;
+    background: url("/Assets/banner-atomy_AdobeExpress.gif");
+} */
+
+.banner-atomy .content-banner{
+    position: absolute;
+    z-index: 1;
+    max-width: max-content;
+    margin: 0 auto;
+    text-align: center;
+} 
+
+.banner-atomy .content-banner h1 {
+    font-size: 80px;
+}
+
+
+
+
+
+section.diferenciais{
+    text-align: center;
+}
+.diferenciais h1{
+    font-size: 55px;
+    margin: 20px 0;
+}
+
+.diferenciais-center{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.diferenciais-div2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+
+}
+.diferenciais-div2 div{
+    width: 500px;
+    max-width: 100%;
+    text-align: left;
+}
+
+.diferenciais-div2 div > h2 {
+    color: rgb(67, 153, 67);
+}
+.diferenciais-div2 div > h3 {
+    color: #5e5e5e;
+}
+.diferenciais-div2 li {
+    display: flex;
+    align-items: center;
+}
+.diferenciais-div2 li > img {
+    margin-right: 5px;
+    margin-top: 10px ;
+}
+.diferenciais-div2 ul > button {
+    margin: 20px 0;
+}
+.sucesso{
+    background-image: url('/Assets/bg-atomy2.jpg');
+    background-position: bottom;
+    height: 300px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+.sucesso div{
+    height: 100%;
+    color: white;
+    background-color: rgb(67, 153, 67);
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    width: 600px;
+    padding: 20px;
+}
+
+
+section.plano{
+    text-align: center;
+}
+.plano h1{
+    font-size: 55px;
+    margin: 20px 0;
+}
+.plano-center{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.plano-center div {
+    width: 500px;
+    max-width: 100%;
+    text-align: left;
+}
+.plano-center div > h2 {
+    color: rgb(67, 153, 67);
+}
+.plano-center div > h3 {
+    color: #5e5e5e;
+}
+.video-youtube{
+    width: 500px;
+    max-width: 100%;
+    height: 300px;
+}
+
+
+
+section.produtos{
+    text-align: center;
+}
+.produtos h1{
+    font-size: 55px;
+    margin: 20px 0;
+}
+.center-produtos{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.center-produtos div  {
+    width: 500px;
+    text-align: left;
+    max-width: 100%;
+}
+.produtos div > h2 {
+    color: rgb(67, 153, 67);
+}
+.produtos div > h3 {
+    color: #5e5e5e;
+}
+.produtos img {
+    width: 100%;
+}
+
+section.momento{
+    padding: 20px;
+    text-align: center;
+}
+.momento h1{
+    font-size: 55px;
+    margin: 20px 0;
+}
+.momento div {
+    margin: 50px auto;
+    width: 700px;
+    max-width: 100%;
+    text-align: left;
+}
+.momento span {
+    color: rgb(67, 153, 67) ;
+}
+
+
+section.representante{
+    padding: 20px;
+    text-align: center;
+}
+
+.representante article {
+    margin: 40px 0;
+    max-width: 100%;
+    display: flex;
+    flex-wrap:wrap ;
+    align-items: center;
+    justify-content: space-around;
+}
+.representante h1 {
+    font-size: 55px;
+    margin: 20px 0;
+}
+.representante h2 {
+  margin-bottom: 15px;
+}
+.representante h3 {
+  margin-bottom: 15px;
+  color: #5e5e5e;
+}
+.div-pos-dir {
+flex-direction: row-reverse;
+}
+.img-produc{ 
+    border-radius: 4px;
+    width: 100%; 
+    max-width: 100%;
+    animation-name: flutuar;
+    animation-duration: .7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+
+}
+.representante div {
+    text-align: left;
+    width: 500px;
+    max-width: 100%;
+    margin: 20px 0;
+}
+.representante p {
+  text-align: left;
+  width: 100%;
+}
+.representante h4 {
+  text-align: left;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+  
+section.duvidas{
+    padding: 20px;
+    text-align: center;
+}
+.duvidas h1{
+    font-size: 55px;
+    margin: 20px 0;
+}
+.div-duvidas{
+    margin: auto;
+    max-width: 800px;
+}
+.div-imagem img{
+    width: 100%;
+    max-width: 100%;
+    margin: 30px 0;
+}
+
+
+section.lider {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+section.lider div {
+    width: 500px;
+    max-width: 100%;
+    text-align: left;
+}
+.lider div > h2 {
+    color: rgb(67, 153, 67);
+}
+.lider div > h3 {
+    color: #5e5e5e;
+}
+
+footer {
+    text-align: center;
+    background-color: #e5f3ff71;
+    padding: 20px;
+}
+footer a {
+    color: #383838;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+textarea {
+  font-family: "Poppins", sans-serif;
+}
